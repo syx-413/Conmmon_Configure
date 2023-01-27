@@ -1,0 +1,56 @@
+[
+  {
+    "key": "alt+s",
+    "command": "latex-workshop.synctex",
+    "when": "editorTextFocus && !isMac"
+  },
+  {
+    "key": "alt+b",
+    "command": "latex-workshop.build",
+    "when": "editorTextFocus && !isMac"
+  },
+  {
+    "key": "alt+t",
+    "command": "latex-workshop.kill",
+    "when": "editorTextFocus && !isMac"
+  },
+  {
+    "key": "alt+e",
+    "command": "latex-workshop.recipes"
+  },
+  {
+    "key": "alt+e",
+    "command": "editor.action.insertSnippet",
+    "when": "editorTextFocus",
+    "args": {
+      "snippet": "\\begin{enumerate}[$1]\n\t\\item $2\n\\end{enumerate}\n"
+      // snip：latex有序列表
+    }
+  },
+  {
+    "key": "alt+i",
+    "command": "editor.action.insertSnippet",
+    "when": "editorTextFocus",
+    "args": {
+      "snippet": "_{$1}$0"
+    }
+  }, // snip：latex下标
+  {
+    "key": "alt+u",
+    "command": "editor.action.insertSnippet",
+    "when": "editorTextFocus",
+    "args": {
+      "snippet": "^{$1}$0"
+    }
+  }, // snip：latex上标
+  {
+    "key": "alt+h",
+    "command": "editor.action.insertSnippet",
+    "when": "editorTextFocus",
+    "args": {
+      "snippet": "\\hat{$1}$0"
+    }
+  }, // snip：latex\hat
+
+  
+]
